@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+:root{
+    --grid-size: 16;
+}
+
+
 *, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
@@ -44,11 +49,7 @@ h1{
     background-color: black;
     
 }
-
-.button:hover, .color-picker:hover, .size-picker:hover{
-    scale: 1.1;
-    
-}
+  
 
 .rgb{
     background: rgb(255,0,0);
@@ -56,6 +57,18 @@ h1{
     color: white;
 }
 
+
 .button, .color-picker, .size-picker{
     cursor:pointer;
+}
+
+.button:hover, .color-picker:hover, .size-picker:hover{
+    scale: 1.1;
+    
+}
+
+.grid-item {
+    flex: 1 0 calc(100% / var(--grid-size));
+    height: calc(100% / var(--grid-size));
+    background-color: lightgray;
 }
