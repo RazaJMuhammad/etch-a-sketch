@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(20,20,20);
+    background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(39,43,113,1) 100%);
+    font-family: 'VT323', monospace;
+}
+
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+h1{
+    color: white;
+    font-size: 100px;
+    font-family: 'VT323', monospace;
+}
+
+.choices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 6rem;
+}
+
+.button{
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    padding: 10px;
+    width: 120px;
+    height: 60px;
+    color: white;
+    background-color: black;
+    
+}
+
+.button:hover, .color-picker:hover, .size-picker:hover{
+    scale: 1.1;
+    
+}
+
+.rgb{
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(3,45,255,1) 20%, rgba(255,0,228,1) 44%, rgba(254,255,0,1) 60%, rgba(18,255,0,1) 75%, rgba(63,2,148,1) 87%, rgba(39,43,113,1) 100%);
+    color: white;
+}
+
+.button, .color-picker, .size-picker{
+    cursor:pointer;
+}
