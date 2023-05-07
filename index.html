@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>Etch a sketch 🖌️</title>
 </head>
 <body>
@@ -12,12 +13,11 @@
         <h1>Etch a Sketch</h1>
     </div>
     <div class="choices">
-        <button class="black">BLACK</button>
-        <button class="rgb">RGB</button>
         <input type="color" name="" id="" class="color-picker">
-        <input type="range" name="" id="" class="size-picker" min="2" max="100" value="16">
-        <p class="size-value">16</p>
-        <button class="reset">RESET</button>
+        <button class="button rgb">RGB</button>
+        <input type="range" name="" id="grid-slider" class="size-picker" min="2" max="100" value="16" >
+        <p class="size-value">16 x 16</p>
+        <button class="button reset">RESET</button>
     </div>
     <div id="container"></div>
 </body>
